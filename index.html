@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Restaurante del Atardecir </title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#fff5ee;
+}
+
+header{
+background-image:url("https://i.pinimg.com/originals/62/4a/04/624a045394743fa881a57eef198a52ad.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+nav{
+background:#333;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+color:white;
+padding:15px;
+text-decoration:none;
+cursor:pointer;
+}
+
+nav a:hover{
+background:#ff7043;
+}
+
+section{
+display:none;
+padding:40px;
+}
+
+.activa{
+display:block;
+}
+
+.flex{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.caja{
+flex:1;
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.galeria img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+<script>
+
+function mostrar(seccion){
+
+let paginas=document.querySelectorAll("section");
+
+paginas.forEach(p=>{
+p.classList.remove("activa");
+});
+
+document.getElementById(seccion).classList.add("activa");
+
+}
+
+window.onload=function(){
+mostrar("inicio");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1> Restaurante Del Atardecer</h1>
+<p>Comida deliciosa todos los días</p>
+</header>
+
+<nav>
+<a onclick="mostrar('inicio')">1 Inicio</a>
+<a onclick="mostrar('menu')">2 Menú</a>
+<a onclick="mostrar('galeria')">3 Galería</a>
+<a onclick="mostrar('video')">4 Video</a>
+<a onclick="mostrar('audio')">5 Audio</a>
+<a onclick="mostrar('redes')">6 Redes</a>
+<a onclick="mostrar('correo')">7 Correo</a>
+<a onclick="mostrar('nosotros')">8 Nosotros</a>
+<a onclick="mostrar('promociones')">9 Promociones</a>
+<a onclick="mostrar('ubicacion')">10 Ubicación</a>
+</nav>
+
+<section id="inicio">
+<h2>Página principal</h2>
+
+<div class="flex">
+
+<div class="caja">
+Bienvenidos a nuestro restaurante. Ofrecemos hamburguesas,
+pizzas, tacos y postres preparados con ingredientes frescos.
+<p>
+Nos apaciona la cocina y creemos que la comida no solo alimenta, 
+sino que también crea momentos especiales y recuerdos inolvidables.
+</p>
+<p>Abierto todos los dias</p> 
+<p>Servicio rápido</p>
+<p>Comida para llevar</p> 
+<p>Ambiente familiar</p>
+<p>Promociones todos los dias</p>
+<p>GRACIAS POR ELEGIRNOS COMO TU LUGAR FAVORITO PARA DISFRUTAR TUS PLATILLOS FAVORITOS</p>
+</div>
+
+<div class="caja">
+<img src="https://feyma.com/blog/wp-content/uploads/2024/02/decoracion-restaurantes-acogedores.jpg" width="300">
+</div>
+
+</div>
+</section>
+
+<section id="menu">
+<h2>Menú</h2>
+
+<div class="flex">
+
+<div class="caja">🍔 Hamburguesa</div>
+<div class="caja">🍕 Pizza</div>
+<div class="caja">🌮 Tacos</div>
+<div class="caja">🍟 Papas fritas</div>
+<div class="caja">🥤 Bebidas coca</div>
+<div class="caja">🍤 Camarón</div>
+<div class="caja">🍣 Sushi</div>
+<div class="caja">🍝 Pasta</div>
+<div class="caja">🫘 Frijol</div>
+<div class="caja">🥙 Panucho</div>
+<div class="caja">🍮 Flan</div>
+<div class="caja">🍓 Fresas</div>
+<div class="caja">🍫 Chocolate</div>
+<div class="caja">🍦 Helado de vainilla</div>
+<div class="caja">🧇 Waffles</div>
+<div class="caja">🎂 Pastel de chocolate</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galería</h2>
+
+<div class="flex galeria">
+
+<img src="https://cdn.pixabay.com/photo/2017/01/22/19/20/pizza-2000615_1280.jpg" width="500">
+<img src="https://cdn.pixabay.com/photo/2017/06/02/18/24/tacos-2367029_1280.jpg">
+<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hot-dog-1238243_1280.jpg">
+<img src="https://centrosantafe.com.mx/cdn/shop/articles/restaurantes-de-mariscos-y-otras-opciones-para-comer-en-cuaresma.jpg?v=1552671997">
+<img src="https://www.unileverfoodsolutions.com.mx/tendencias/de-mexico-para-el-mundo/platillos-mexicanos/top10-platillos/jcr:content/parsys/content-aside-footer/columncontrol_copy_43670508/columnctrl_parsys_1/textimage_copy/image.transform/jpeg-optimized/image.1592429865810.jpg">
+<img src="https://wp-otstatic.opentable.com/uploads/sites/432/2023/09/ezgif-1-78bec28f2a.jpeg">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/95/55/fa/caption.jpg?w=500&h=-1&s=1">
+<img src="https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2024/10/restaurantes-tailandeses-en-cdmx2.jpg?fit=1400%2C2100&ssl=1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPlyVwjErCgsw4ugt8I7zDyz2AMEJgbTtdg&s">
+<img src="https://www.unileverfoodsolutions.com.mx/tendencias/tendencias-en-gastronomia-mexicana/jcr:content/parsys/set1/row2/span12/image.img.jpg/1749111103699.jpg">
+<img src="https://www.idgastronomic.com/wp-content/uploads/2024/01/Receta_Finger-Fish-Tempura_Salsa-tartara-1024x555.png">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8C3zw_vPp5u6JbqIHwCWPpD1qaQVEcnnBwA&s">
+<img src="https://presidenteicpuebla.com/wp-content/uploads/2023/06/restaurante-puebla-ceviche-pescao-limon.jpg">
+<img src="https://media.scoolinary.app/blog/images/2021/01/flan-scoolinary1.jpg">
+<img src="https://enlacocinamagazine.b-cdn.net/wp-content/uploads/2019/07/postres-veraniegos-992x640.jpg">
+<img src="https://www.ehosa.es/wp-content/uploads/2017/02/mousse.jpg">
+<img src="https://meno18.com/images/img-horeca01.jpg">
+<img src="https://eventosmonasteriolareal.com/wp-content/uploads/2017/01/gofre-restaurante-monasterio-1080x675.jpg">
+<img src="https://vips.com.mx/menu/img/platos/brownie_postres.png">
+<img src="https://enlacocinamagazine.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes-992x640.jpg">
+<img src="https://mestredosdrinks.com/es/wp-content/uploads/2025/08/bebidas-todo-lo-que-los-amantes-de-las-bebidas-necesitan-saber-para-preparar-cocteles-sabrosos.jpg">
+<img src="https://www.importacionescuesta.es/images/blog/Bebidas-mexicanas-y-otras-ideas-que-un-restaurante-necesita-para-dar-El-Grito-.jpg">
+<img src="https://i.blogs.es/2e9c8a/bar-1617190_1280/1366_521.jpg">
+<img src="https://imag.bonviveur.com/bebidas.jpg">
+
+</div>
+
+</section>
+
+<section id="video">
+<h2>Video</h2>
+
+<video width="400" controls>
+<source src="videoooo1.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<section id="audio">
+<h2>Audio</h2>
+
+<audio controls>
+<source src="Audio para Restaurantes - SURBAN.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
+<section id="redes">
+
+<h2>Redes sociales</h2>
+
+<img src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo=w240-h480-rw"width="100">
+
+<a href="https://www.facebook.com/Mishell.mutul.2026" target="_blank">Facebook</a><br><br>
+
+<img src="https://i.blogs.es/759769/trucosinstagram/1366_2000.jpg"width="100">
+
+<a href="https://www.instagram.com/lunaflormel/" target="_blank">Instagram</a>
+
+</section>
+
+<section id="correo">
+
+<h2>Correo</h2>
+
+<form>
+
+Nombre<br>
+<input type="text"><br><br>
+
+Correo<br>
+<input type="email"><br><br>
+
+Mensaje<br>
+<textarea></textarea><br><br>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+</section>
+
+<section id="nosotros">
+
+<h2>Nosotros</h2>
+
+<p>
+Somos un restaurante familiar dedicado a ofrecer comida
+de calidad con excelente servicio.Transformamos cada platillo en una experiencia unica, 
+nuestro cocina cambina tradiciones y creatividad, cuidando
+cada detalle para ofrecer sabores autenticos que deleitan todos los sentidos.
+</p>
+
+<p> 
+bajo la inspiracion de la cocina contemporanea, 
+seleccionamos ingredientes frescos y de la mas alta calidad, 
+elaboran recetas que reflejan pacion, dedicaciony amor por la gastronomia.   
+</p>
+
+<p>
+Nuestro restaurante ha sido diceñado para brindar un ambiente calido, 
+elegante y acogedor, ideal para compartir momentos especiales en familia, 
+con amigos o en ocasiones importantes.
+</p>
+<img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2022/09/Terraza-catedral-centro-historico-cdmx.jpg"width="400">
+
+</section>
+
+<section id="promociones">
+
+<h2>Promociones</h2>
+
+<div class="flex">
+
+<div class="caja">2x1 en hamburguesas</div>
+<div class="caja">Pizza + refresco</div>
+<div class="caja">Descuento del 20% en pastascos al 50% los martes</div>
+<div class="caja">Combo familiar: 2 pizzas + papas + refresco</div>
+<div class="caja">Postre gratis en la compra de cualquier platillo</div>
+<div class="caja">Hamburguesa + papas + bebida a precio especial</div>
+<div class="caja">3 tacos por precio de 2</div>
+<div class="caja">Helado gratis para niños</div>
+<div class="caja">Combo sushi + bebida</div>
+</div>
+<img src="https://cazaofertas.com.mx/wp-content/uploads/2018/01/Cupon-2x1-en-comidas-y-cenas-en-100-Natural-sucursal-Cuernavaca.jpg"width="300">
+</section>
+
+<section id="ubicacion">
+
+<h2>Ubicación</h2>
+
+<p>Calle Principal #123</p>
+
+<img src="https://www.shutterstock.com/image-vector/city-map-large-red-location-260nw-2715914073.jpg"white="400">
+</section>
+
+<footer>
+<p>Restaurante Delicias © 2026</p>
+</footer>
+
+</body>
+</html>
